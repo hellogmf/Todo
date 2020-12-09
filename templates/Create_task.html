@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create TODO</title>
+    <style>form{color: rgb(255, 255, 255) }
+           body{background: rgb(228, 64, 64);}
+    
+    </style>
+</head> -->
+<body align="center">
+    <form action="/addtask" method="POST">
+        Task Name<Textarea name="task_name"></Textarea><br>
+       <br> Priority<input type="text" name="priority"><br><br>
+       Status<input type="text" name="status"><br>
+       <br>     <input type="submit" value="submit"><br><br>
+    </form>
+</body>
+<button type="radio" class="start"><a href="/viewtodo">View Todo</a></button>
+</html>
+{% endblock %}

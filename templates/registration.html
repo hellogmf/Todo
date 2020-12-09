@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- <!DOCTYPE html>
+<head></head>
+<style>form{color: rgb(255, 255, 255) }
+	body{background: rgb(228, 64, 64);}</style> -->
+<body>
+	
+<div class="container">
+<div class="header">
+ <h1> Regitration page </h1>
+ 
+ </div>
+ <div class = center>
+ <form action="/register_verify" method="post">
+	<label class = "un">
+		Username: <input class="username" type="text" name="username">
+	</label>
+
+	<label class = "pwd">
+		Password: <input class="password" type="password" name="password">
+	</label><br>  
+<br>
+
+<label class = "firstname">
+	First name: <input class="firstname" type="text" name="firstname">
+</label>
+	<label class = "lastname">
+	Last name: <input class="lastname" type="text" name="lastname">
+	</label><br><br>  
+
+
+
+				
+	
+
+	<label class = "email">
+		Email: <input class="email" type="email" name="email">
+	</label>
+<label class = "phonenumber">
+Phone number: 	
+		<input class="phonenumber" type="phonenumber" name="phonenumber">
+</label>
+<br>
+<br>
+	<label class = 'submit'>
+		<input type="submit" class="submit" value="Submit" name="submit">
+	</label>
+</div>
+</form>
+</div>
+</body>
+
+{% endblock %}

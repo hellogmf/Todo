@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- <!DOCTYPE html>
+<html> -->
+<!-- <head>
+	<title>Login</title>
+
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<style>
+
+		h1{
+			text-align: center;
+			color: white;
+			font-size: larger;
+			font-family:Arial, Helvetica, sans-serif;
+		}
+
+		body{
+			background-color: cadetblue;
+			border: 1px solid #ccc;
+			display: inline-block;
+			padding:10px 10px;
+  			margin: 150px 500px;
+		}
+
+		.center {
+			background-color: white;
+			width: 200px;
+			/* padding: 10px 22px;	 */
+			padding: 20px 20px;
+			background-position: center center;
+			text-align: center;
+		
+
+		}
+		.submit {
+			color: white;
+			background-color: cadetblue ;
+
+		}
+	</style> 
+</head> -->
+<!-- <style>form{color: rgb(255, 255, 255) }
+	body{background: rgb(228, 64, 64);}</style> -->
+<body>
+	
+<div class="container">
+<div class="header">
+ <h2>Please Login to continue </h2>
+ 
+ </div>
+ <div class = center>
+ <form action="/verify" method="post">
+ <label class = "un">
+ Username: <input class="username" type="text" name="username">
+</label>
+<br>
+<br>
+<label class = "pwd">
+ Password: <input class="password" type="password" name="password">
+</label>
+<br>
+<br>
+<label class = 'submit'>
+<input type="submit" class="submit" value="Submit" name="submit">
+</label>
+</div>
+</form>
+</div>
+</body>
+{% endblock %}

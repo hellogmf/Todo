@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>form{color: rgb(255, 255, 255) }
+    body{background: rgb(228, 64, 64);}</style> -->
+<body>
+    <table>
+      <thread>
+          <td> task_name </td>
+          <td>priority</td>
+          <td>status</td>
+
+      </thread>
+      {% for record in records %}
+      <tr>
+          <td>{{ record["task_name"]}}</td>
+          <td>{{ record ["priority"]}}</td>
+          <td>{{ record ["status"]}}</td>
+          <td><a href="/completetodo?id={{record['id']}}">Mark as complete</a><br><br>
+            <a href="/deletetodo?id={{record['id']}}">Delete</a></td>
+          
+      </tr>
+      {% endfor %}
+    </table>
+<button type="radio" class="start"><a href=/createtask>Create todo</a></button>
+</body>
+
+</html>
+{% endblock %}

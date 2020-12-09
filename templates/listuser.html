@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+      <thread>
+          <td> username </td>
+          <td>password</td>
+          <td>firstname</td>
+          <td>lastname</td>
+          <td>email</td>
+          <td>phonenumber</td>
+
+      </thread>
+      {% for record in records %}
+      <tr>
+          <td>{{ record["username"]}}</td>
+          <td>{{ record ["password"]}}</td>
+          <td>{{ record["firstname"]}}</td>
+          <td>{{ record["lastname"]}}</td>
+          <td>{{ record["email"]}}</td>
+          <td>{{ record["phonenumber"]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,46 @@
+body{
+    
+    background-color:#104e58;  
+    font-family: cursive;
+    color:#b84a36;
+}
+h1{
+   color:#b84a36 ;
+
+
+}
+  
+.start{
+color : rgb(18, 80, 116);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+width: 200px;
+height: 50px;
+background-size: cover ;
+background-color: rgb(0, 235, 252);
+}
+
+  p{font-family: cursive;font-size: 30px;}
+  img {
+    border-radius: 30px;size: 40px;
+  }
+
+  nav ul {
+    background-color:rgba(0, 235, 252, 0.904);
+    border-style: solid;
+    border-color: rgb(18, 80, 116);
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgb(15, 38, 241);
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(8, 51, 241);
+  }
